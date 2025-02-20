@@ -10,6 +10,47 @@ use Illuminate\Support\Str;
 
 class BeritaController extends Controller
 {
+
+    public function allNews(Request $request)
+{
+    $query = Berita::query();
+
+    // Filter berdasarkan pencarian
+    if ($request->has('search')) {
+        $searchTerm = $request->search;
+        $query->where(function($q) use ($searchTerm) {
+            $q->where('title', 'LIKE', "%{$searchTerm}%")
+              ->orWhere('content', 'LIKE', "%{$searchTerm}%");
+        });
+    }
+
+    // Filter berdasarkan kategori jika ada
+    if ($request->has('category') && $request->category !== '') {
+        $query->where('category', $request->category);
+    }
+
+    // Pengurutan
+    if ($request->has('sort')) {
+        switch ($request->sort) {
+            case 'newest':
+                $query->latest();
+                break;
+            case 'oldest':
+                $query->oldest();
+                break;
+            default:
+                $query->latest();
+        }
+    } else {
+        $query->latest();
+    }
+
+    // Pagination dengan 9 item per halaman
+    $berita = $query->paginate(9)->withQueryString();
+
+    return view('allNews', compact('berita'));
+}
+
     /**
      * Menampilkan daftar berita di halaman admin
      */

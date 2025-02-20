@@ -82,11 +82,11 @@
     
             <!-- Menu Navbar Mode Desktop -->
             <div class="hidden md:flex justify-center border-2 border-[#0C2F50] rounded-full px-3 py-1 space-x-4">
-                <a href="{{ route('home') }}" class="nav-link relative text-gray-800 font-medium px-4 py-1">HOME</a>
-                <a href="{{ route('home') }}" class="nav-link text-gray-800 font-medium px-4 py-1">ABOUT</a>
-                <a href="{{ route('home') }}" class="nav-link text-gray-800 font-medium px-4 py-1">SERVICE</a>
-                <a href="{{ route('home') }}" class="nav-link text-gray-800 font-medium px-4 py-1">TEAM</a>
-                <a href="{{ route('home') }}" class="nav-link text-gray-800 font-medium px-4 py-1">CONTACT</a>
+                <a href="{{ route('home') }}#home" class="nav-link relative text-gray-800 font-medium px-4 py-1">HOME</a>
+                <a href="{{ route('home') }}#about" class="nav-link text-gray-800 font-medium px-4 py-1">ABOUT</a>
+                <a href="{{ route('home') }}#service" class="nav-link text-gray-800 font-medium px-4 py-1">SERVICE</a>
+                <a href="{{ route('home') }}#team" class="nav-link text-gray-800 font-medium px-4 py-1">TEAM</a>
+                <a href="{{ route('home') }}#contact" class="nav-link text-gray-800 font-medium px-4 py-1">CONTACT</a>
             </div>
         </div>
     
@@ -174,7 +174,7 @@
     
                     <!-- Tombol Lihat Semua Berita -->
                     <div class="mt-6">
-                        <a href="#" class="w-full block text-center py-3 bg-[#0C2F50] text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-md">
+                        <a href="{{ route('berita') }}" class="w-full block text-center py-3 bg-[#0C2F50] text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-md">
                             <i class="bi bi-list-ul mr-2"></i>
                             Lihat Semua Berita
                         </a>
@@ -207,11 +207,11 @@
             <div>
                 <h3 class="text-2xl font-bold text-[#0C2F50] mb-4">Useful Link</h3>
                 <ul class="text-gray-700 space-y-2">
-                    <li><a href="#home" class="hover:underline">Home</a></li>
-                    <li><a href="#about" class="hover:underline">About Us</a></li>
-                    <li><a href="#service" class="hover:underline">Services</a></li>
-                    <li><a href="#team" class="hover:underline">Team</a></li>
-                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                    <li><a href="{{ route('home') }}#home" class="hover:underline">Home</a></li>
+                    <li><a href="{{ route('home') }}#about" class="hover:underline">About Us</a></li>
+                    <li><a href="{{ route('home') }}#service" class="hover:underline">Services</a></li>
+                    <li><a href="{{ route('home') }}#team" class="hover:underline">Team</a></li>
+                    <li><a href="{{ route('home') }}#contact" class="hover:underline">Contact</a></li>
                 </ul>
             </div>
     

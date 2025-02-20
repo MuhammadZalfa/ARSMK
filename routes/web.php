@@ -9,6 +9,8 @@ Route::get('/', [BeritaController::class, 'showListBerita'])
 
 Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('berita.show');
 
+Route::get('/berita', [BeritaController::class, 'allNews'])->name('berita');
+
 Route::post('/messages', [MessageController::class, 'store'])
     ->name('messages.store');
 
