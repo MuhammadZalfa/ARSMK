@@ -322,7 +322,7 @@
                 <div class="flex flex-col items-center text-center space-y-4">
                     <img src="{{ asset('images/PaBagus.jpg') }}" alt="Team Member" class="w-36 h-36 rounded-full object-cover shadow-lg">
                     <div>
-                        <h3 class="text-lg font-bold">Pa Bagus</h3>
+                        <h3 class="text-lg font-bold">Bagus Sundoro, AK., CA, MM, CPA</h3>
                         <p class="text-sm text-blue-300 uppercase">Managing Partner</p>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                 <div class="flex flex-col items-center text-center space-y-4">
                     <img src="{{asset('images/BuLady.jpg') }}" alt="Team Member" class="w-36 h-36 rounded-full object-cover shadow-lg">
                     <div>
-                        <h3 class="text-lg font-bold">Bu Lady</h3>
+                        <h3 class="text-lg font-bold">Lady Karlinah, S.E., AK., M.AK., BKP., ACPA., CTC.</h3>
                         <p class="text-sm text-blue-300 uppercase">Partner</p>
                     </div>
                 </div>
@@ -349,7 +349,7 @@
                 <div class="flex flex-col items-center text-center space-y-4">
                     <img src="{{ asset('images/Dina.jpeg') }}" alt="Team Member" class="w-36 h-36 rounded-full object-cover shadow-lg">
                     <div>
-                        <h3 class="text-lg font-bold">Dina Rusyida Khoirini</h3>
+                        <h3 class="text-lg font-bold">Dina Rusyda Khoirini</h3>
                         <p class="text-sm text-blue-300 uppercase">Tax Consultant</p>
                     </div>
                 </div>
